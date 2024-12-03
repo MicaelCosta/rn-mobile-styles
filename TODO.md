@@ -1,4 +1,3 @@
-Configurar package
 Configurar Restyle
 Configurar Theme
 Criar component Box

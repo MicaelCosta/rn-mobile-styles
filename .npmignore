@@ -1,0 +1,8 @@
+example-rn-mobile-styles
+node_modules
+.eslintrc.js
+.gitignore
+.prettierrc.js
+TODO.md
+tsconfig.json
+yarn.lock
