@@ -1,11 +1,15 @@
 import React from 'react';
 import {View} from 'react-native';
-import {teste} from 'rn-mobile-styles';
+import {ThemeProvider, Button} from 'rn-mobile-styles';
+
+import {theme} from './theme';
 
 export default function App() {
-  teste();
-
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}} />
+    <ThemeProvider theme={theme}>
+      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <Button title="Button test" />
+      </View>
+    </ThemeProvider>
   );
 }
