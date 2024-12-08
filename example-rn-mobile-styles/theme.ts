@@ -46,16 +46,16 @@ export const theme = {
     bold: 'Arial',
   },
   spacing: {
-    s4: 0.25,
-    s8: 0.5,
-    s12: 0.75,
-    s16: 1,
-    s20: 1.25,
-    s24: 1.5,
+    s4: 4,
+    s8: 8,
+    s12: 12,
+    s16: 16,
+    s20: 20,
+    s24: 24,
   },
-  borderRadiis: {
-    s4: 0.25,
-    s8: 0.5,
-    s12: 0.75,
+  borderRadii: {
+    s8: 8,
+    s12: 12,
+    s16: 16,
   },
 };

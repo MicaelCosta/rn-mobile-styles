@@ -8,5 +8,5 @@ export function ThemeProvider(props: ThemeProviderProps){
 
     return <SRThemeProvider theme={createTheme(theme)}>
         {children}
-    </SRThemeProvider>
+    </SRThemeProvider>;
 }

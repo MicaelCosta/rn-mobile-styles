@@ -44,10 +44,10 @@ export type Theme = {
     s20: number;
     s24: number;
   };
-  borderRadiis: {
-    s4: number;
+  borderRadii: {
     s8: number;
     s12: number;
+    s16: number;
   };
 }
 
