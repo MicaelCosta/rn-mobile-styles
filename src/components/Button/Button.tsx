@@ -1,8 +1,9 @@
 import React from 'react';
-import { Text, ActivityIndicator } from 'react-native';
+import { ActivityIndicator } from 'react-native';
 
 import { ButtonProps } from './ButtonType';
 import { TouchableOpacityBox } from '../Box';
+import { Text } from '../Text';
 
 export function Button(props: ButtonProps){
     const { title, loading, ...touchableOpacityBoxProps } = props;
@@ -17,7 +18,7 @@ export function Button(props: ButtonProps){
             borderRadius="s16"
             {...touchableOpacityBoxProps}
         >
-            {loading ? <ActivityIndicator /> : <Text>{title}</Text> }
+            {loading ? <ActivityIndicator /> : <Text bold color='primaryContrast'>{title}</Text> }
         </TouchableOpacityBox>
     );
 }

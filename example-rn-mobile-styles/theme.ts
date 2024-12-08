@@ -42,8 +42,11 @@ export const theme = {
   },
   fonts: {
     regular: 'Arial',
+    italic: 'Arial',
     semibold: 'Arial',
+    semiboldItalic: 'Arial',
     bold: 'Arial',
+    boldItalic: 'Arial',
   },
   spacing: {
     s4: 4,

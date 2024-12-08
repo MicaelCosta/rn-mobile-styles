@@ -33,8 +33,11 @@ export type Theme = {
   };
   fonts: {
     regular: string;
+    italic: string;
     semibold: string;
+    semiboldItalic: string;
     bold: string;
+    boldItalic: string;
   };
   spacing: {
     s4: number;
@@ -49,8 +52,12 @@ export type Theme = {
     s12: number;
     s16: number;
   };
+  textVariants: {
+    defaults: {}
+  }
 }
 
 export type ThemeColor = keyof Theme['colors'];
+export type ThemeFonts = Theme['fonts'];
 export type ThemeSpacing = keyof Theme['spacing'];
-export type ThemeBorderRadius = keyof Theme['borderRadius'];
+export type ThemeBorderRadius = keyof Theme['borderRadii'];
