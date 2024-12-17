@@ -1,5 +1,5 @@
 {
-  "name": "example",
+  "name": "example-rn-mobile-styles",
   "version": "0.0.1",
   "private": false,
   "scripts": {
@@ -12,7 +12,7 @@
   "dependencies": {
     "react": "18.3.1",
     "react-native": "0.76.3",
-    "rn-mobile-styles": "^0.0.1"
+    "rn-mobile-styles": "^0.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

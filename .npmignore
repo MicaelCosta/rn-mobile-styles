@@ -5,4 +5,3 @@ node_modules
 .prettierrc.js
 TODO.md
 tsconfig.json
-yarn.lock
