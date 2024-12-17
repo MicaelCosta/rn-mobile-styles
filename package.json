@@ -46,7 +46,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/MicaelCosta/rn-mobile-styles"
+		"url": "https://github.com/MicaelCosta/rn-mobile-styles.git"
 	},
 	"homepage": "https://github.com/MicaelCosta/rn-mobile-styles#README.md",
 	"license": "MIT",
