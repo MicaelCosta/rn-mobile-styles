@@ -6,5 +6,13 @@ import { ThemeProviderProps } from './themeProviderType';
 export function ThemeProvider(props: ThemeProviderProps) {
 	const { children, theme } = props;
 
-	return <SRThemeProvider theme={createTheme(theme)}>{children}</SRThemeProvider>;
+	const newTheme = {
+		...theme,
+		//textVariants é obrigatorio para não dar erro de funcsMap[key] is not a function
+		textVariants: {
+			defaults: {},
+		},
+	};
+
+	return <SRThemeProvider theme={createTheme(newTheme)}>{children}</SRThemeProvider>;
 }

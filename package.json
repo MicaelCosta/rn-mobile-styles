@@ -1,12 +1,14 @@
 {
 	"name": "rn-mobile-styles",
-	"version": "0.0.2",
+	"version": "0.0.4",
+	"private": false,
 	"main": "src/index.ts",
 	"types": "src/index.d.ts",
 	"scripts": {
-		"android": "cd example && react-native run-android",
-		"ios": "cd example && react-native run-ios",
-		"lint": "eslint ."
+		"android": "cd example && yarn android",
+		"ios": "cd example && yarn ios",
+		"lint": "eslint .",
+		"build": "del rn-mobile-styles.tgz && yarn pack --filename rn-mobile-styles.tgz && cd example && yarn remove rn-mobile-styles && yarn cache clean rn-mobile-styles && yarn add ../rn-mobile-styles.tgz"
 	},
 	"dependencies": {
 		"@shopify/restyle": "^2.4.4"

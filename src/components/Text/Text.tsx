@@ -11,15 +11,22 @@ export function Text(props: TextProps) {
 	const { fonts } = useAppTheme();
 
 	const fontFamily = getFontFamily(fonts, preset, bold, italic, semiBold);
+	const fontSize = $fontSizes[preset];
 
 	return (
-		<SRText color="text" style={[$fontSizes[preset], style, { fontFamily }]} {...textProps}>
+		<SRText color="text" style={[fontSize, style, { fontFamily }]} {...textProps}>
 			{children}
 		</SRText>
 	);
 }
 
-function getFontFamily(fonts: ThemeFonts, preset: TextVariants, bold?: boolean, italic?: boolean, semiBold?: boolean) {
+function getFontFamily(
+	fonts: ThemeFonts,
+	preset: TextVariants,
+	bold?: boolean,
+	italic?: boolean,
+	semiBold?: boolean
+): string {
 	if (preset === 'headingLarge' || preset === 'headingMedium' || preset === 'headingSmall') {
 		return italic ? fonts.boldItalic : fonts.bold;
 	}
@@ -35,13 +42,12 @@ function getFontFamily(fonts: ThemeFonts, preset: TextVariants, bold?: boolean, 
 			return fonts.semibold;
 		case italic:
 			return fonts.italic;
-
 		default:
-			fonts.regular;
+			return fonts.regular;
 	}
 }
 
-export const $fontSizes: Record<TextVariants, TextStyle> = {
+const $fontSizes: Record<TextVariants, TextStyle> = {
 	headingLarge: { fontSize: 32, lineHeight: 38.4 },
 	headingMedium: { fontSize: 22, lineHeight: 26.4 },
 	headingSmall: { fontSize: 18, lineHeight: 23.4 },
