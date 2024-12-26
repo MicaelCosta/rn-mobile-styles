@@ -5571,6 +5571,11 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
+react-native-safe-area-context@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-5.0.0.tgz#0f28f3b406d4466c6afdaaa615198d12741e88b5"
+  integrity sha512-4K4TvEbRsTDYuSSJZfMNKuJNn1+qgrSkOBwRoreiHcuqy1egrHpkhPhoN1Zg1+b3BxcVXlKXtMIf4eVaG/DPJw==
+
 react-native@0.76.5:
   version "0.76.5"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.76.5.tgz#3ce43d3c31f46cfd98e56ef2dfc70866c04ad185"
@@ -5841,10 +5846,11 @@ rimraf@~2.6.2:
     glob "^7.1.3"
 
 rn-mobile-styles@../rn-mobile-styles.tgz:
-  version "0.0.4"
-  resolved "../rn-mobile-styles.tgz#0f94242a51f64dc57c895eae11bfd0d408d32bab"
+  version "0.0.5"
+  resolved "../rn-mobile-styles.tgz#f456efb71b1ef81d0e7befb6cfd2877df7509ed1"
   dependencies:
     "@shopify/restyle" "^2.4.4"
+    react-native-safe-area-context "^5.0.0"
 
 run-parallel@^1.1.9:
   version "1.2.0"
