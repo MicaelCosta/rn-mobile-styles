@@ -12,7 +12,8 @@
 		"build": "del rn-mobile-styles.tgz && yarn pack --filename rn-mobile-styles.tgz && yarn clean:cache && cd example && yarn remove rn-mobile-styles && yarn add ../rn-mobile-styles.tgz"
 	},
 	"dependencies": {
-		"@shopify/restyle": "^2.4.4"
+		"@shopify/restyle": "^2.4.4",
+		"react-native-safe-area-context": "^5.0.0"
 	},
 	"peerDependencies": {
 		"react": "*",
