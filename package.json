@@ -12,8 +12,10 @@
 		"build": "del rn-mobile-styles.tgz && yarn pack --filename rn-mobile-styles.tgz && yarn clean:cache && cd example && yarn remove rn-mobile-styles && yarn add ../rn-mobile-styles.tgz"
 	},
 	"dependencies": {
+		"@react-native-community/datetimepicker": "^8.2.0",
 		"@shopify/restyle": "^2.4.4",
-		"react-native-safe-area-context": "^5.0.0"
+		"date-fns": "^4.1.0",
+		"react-native-modal": "^13.0.1"
 	},
 	"peerDependencies": {
 		"react": "*",

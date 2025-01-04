@@ -8,6 +8,7 @@ import {
   Button,
   TextInput,
   Screen,
+  DateInput,
 } from 'rn-mobile-styles';
 
 import {theme} from './theme';
@@ -71,6 +72,26 @@ export default function App() {
           label="Text Input with right component"
           placeholder="Text Input with right component"
           RightComponent={<Loading />}
+          boxProps={{
+            mt: 's16',
+            width: '100%',
+          }}
+        />
+
+        <DateInput
+          label="Date Input"
+          onChange={() => {}}
+          value={new Date()}
+          boxProps={{
+            mt: 's16',
+            width: '100%',
+          }}
+        />
+
+        <DateInput
+          label="Date Input with error"
+          errorMessage="error message"
+          onChange={() => {}}
           boxProps={{
             mt: 's16',
             width: '100%',
