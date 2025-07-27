@@ -9,7 +9,7 @@
 		"ios": "cd example && yarn ios",
 		"lint": "eslint .",
 		"clean:cache": "yarn cache clean",
-		"build": "del rn-mobile-styles.tgz && yarn pack --filename rn-mobile-styles.tgz && yarn clean:cache && cd example && yarn remove rn-mobile-styles && yarn add ../rn-mobile-styles.tgz"
+		"build": "yarn pack --filename rn-mobile-styles.tgz && yarn clean:cache && cd example && yarn remove rn-mobile-styles && yarn add ../rn-mobile-styles.tgz"
 	},
 	"dependencies": {
 		"@react-native-community/datetimepicker": "^8.2.0",
